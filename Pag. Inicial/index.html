@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="../logo.ico" type="image/x-icon" />
+    <title>Molto Bene - Restaurante Italiano</title>
+    <link rel="stylesheet" href="../Pag. Inicial/style.css" />
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="../Pag. Inicial/index.html">
+                <img src="../Imagens/logo.jpg" alt="Logo do Restaurante" />
+            </a>
+        </div>
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li><a href="../Pag. Inicial/index.html">Home</a></li>
+                    <li><a href="../Pags Extra/cardapio.html">Cardápio</a></li>
+                    <li><a href="../Pags Extra/sobre.html">Sobre</a></li>
+                    <li><a href="../Pags Extra/contato.html">Contato</a></li>
+                </ul>
+            </nav>
+            <a class="btn" href="#formReserva">Reservar Mesa</a>
+        </div>
+    </header>
+
+    <main id="destaque">
+        <section class="destaque">
+            <img src="../Imagens/interna.jpg" alt="Imagem Interna do Restaurante" />
+            <div class="textos-destaque">
+                <h2>Onde o sabor da Itália encontra você</h2>
+                <p>Descubra receitas autênticas, ingredientes frescos e uma experiência que te leva direto às ruas de Roma.</p>
+            </div>
+        </section>
+    </main>
+
+    <main id="pratos">
+        <div id="pratos">
+            <article class="prato">
+                <img src="../Imagens/spaghetti.jpg" alt="Spaghetti alla Carbonara" />
+                <h3>Spaghetti alla Carbonara</h3>
+                <p class="preco">R$ 42,00</p>
+                <p>Espaguete envolto em um molho cremoso de ovos, queijo pecorino romano, guanciale crocante e pimenta preta moída na hora.</p>
+                <a class="btn" href="#">Ver mais &#8594;</a>
+            </article>
+
+            <article class="prato">
+                <img src="../Imagens/risotto.jpg" alt="Risotto alla Milanese" />
+                <h3>Risotto alla Milanese</h3>
+                <p class="preco">R$ 48,00</p>
+                <p>Risoto cremoso preparado com arroz arbório, açafrão, manteiga e queijo parmesão, resultando em um prato dourado e aromático.</p>
+                <a class="btn" href="#">Ver mais &#8594;</a>
+            </article>
+
+            <article class="prato">
+                <img src="../Imagens/ossobuco.jpg" alt="Osso Buco alla Milanese" />
+                <h3>Osso Buco alla Milanese</h3>
+                <p class="preco">R$ 65,00</p>
+                <p>Pernil de vitela cozido lentamente com vinho branco, caldo de carne e vegetais, servido com gremolata e acompanhado de risotto alla milanese.</p>
+                <a class="btn" href="#">Ver mais &#8594;</a>
+            </article>
+
+            <article class="prato">
+                <img src="../Imagens/pizza.jpg" alt="Pizza Margherita" />
+                <h3>Pizza Margherita</h3>
+                <p class="preco">R$ 38,00</p>
+                <p>Clássica pizza napolitana com molho de tomate fresco, mozzarella de búfala e folhas de manjericão, representando as cores da bandeira italiana.</p>
+                <a class="btn" href="#">Ver mais &#8594;</a>
+            </article>
+
+            <article class="prato">
+                <img src="../Imagens/lasagna.jpg" alt="Lasagna alla Bolognese" />
+                <h3>Lasagna alla Bolognese</h3>
+                <p class="preco">R$ 45,00</p>
+                <p>Camadas de massa fresca intercaladas com molho bolonhesa, molho bechamel e queijo parmesão, assadas até dourar.</p>
+                <a class="btn" href="#">Ver mais &#8594;</a>
+            </article>
+
+            <article class="prato">
+                <img src="../Imagens/tiramisu.jpg" alt="Tiramisù" />
+                <h3>Tiramisù</h3>
+                <p class="preco">R$ 28,00</p>
+                <p>Sobremesa clássica italiana feita com camadas de biscoitos embebidos em café, creme de mascarpone e polvilhada com cacau em pó.</p>
+                <a class="btn" href="#">Ver mais &#8594;</a>
+            </article>
+        </div>
+
+        <aside>
+            <h3>Vídeo de Culinária</h3>
+            <iframe
+                src="https://youtu.be/uNGZAMx3w-c?8WwRXhS18QJ1YCVy"
+                title="Vídeo sobre Culinária Italiana"
+                allowfullscreen
+            ></iframe>
+
+            <div class="horario">
+                <h3>Horário de Funcionamento</h3>
+                <p>Segunda a Sexta: 11h - 23h</p>
+                <p>Sábado e Domingo: 12h - 00h</p>
+            </div>
+
+            <div id="formReserva">
+                <h3>Reserve sua Mesa</h3>
+                <form>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required />
+
+                    <label for="data">Data:</label>
+                    <input type="date" id="data" name="data" required />
+
+                    <label for="horario">Horário:</label>
+                    <select id="horario" name="horario" required>
+                        <option value="" disabled selected>Escolha um horário</option>
+                        <option value="12:00">12:00</option>
+                        <option value="13:00">13:00</option>
+                        <option value="14:00">14:00</option>
+                        <option value="19:00">19:00</option>
+                        <option value="20:00">20:00</option>
+                    </select>
+
+                    <button type="submit">Enviar Reserva</button>
+                </form>
+            </div>
+        </aside>
+    </main>
+
+    <footer>
+        <p>
+            &copy; 2025 Molto Bene - Restaurante Italiano | Contato:
+            <a href="mailto:contato@moltobene.com">contato@moltobene.com</a> |
+            <a href="tel:+5511999999999">(11) 99999-9999</a>
+        </p>
+        <p>
+            Siga-nos:
+            <a href="#" target="_blank">Facebook</a> |
+            <a href="#" target="_blank">Instagram</a> |
+            <a href="#" target="_blank">Twitter</a>
+        </p>
+    </footer>
+</body>
+
+</html>
