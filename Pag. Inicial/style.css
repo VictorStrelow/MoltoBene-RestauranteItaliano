@@ -1,0 +1,258 @@
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #111;
+    color: #eee;
+    line-height: 1.6;
+}
+
+/* HEADER */
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 60px;
+}
+
+.navbar nav ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+.navbar nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.navbar nav ul li a:hover, footer a:hover {
+    color: #28a745;
+    transition: 0.3s;
+}
+
+.navbar .btn {
+    margin-left: 20px;
+    padding: 10px 15px;
+    background-color: #d4af37;
+    color: #000;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navbar .btn:hover, .prato a:hover, aside button:hover {
+    background-color: #c79e2e;
+    color: #000;
+}
+
+/* HERO */
+.destaque {
+    min-height: 100vh;
+    background-image: url('../Imagens/interna.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+.textos-destaque {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+    border-left: 5px solid #28a745;
+    border-right: 5px solid #dc3545;
+}
+
+.textos-destaque h2 {
+    font-size: 2.8em;
+    color: #fff;
+}
+
+.textos-destaque p {
+    font-size: 1.2em;
+    color: #ccc;
+}
+
+/* LAYOUT */
+#conteudo {
+    display: flex;
+    gap: 40px;
+    padding: 40px 5%;
+    flex-wrap: wrap;
+}
+
+#pratos {
+    flex: 3;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+/* PRATOS */
+.prato {
+    flex: 1 1 300px;
+    background: #1c1c1c;
+    border-radius: 10px;
+    padding: 20px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.prato:hover {
+    transform: scale(1.02);
+}
+
+.prato img {
+    width: 100%;
+    max-height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.prato h3 {
+    margin-top: 10px;
+    font-size: 1.3em;
+    color: #fff;
+}
+
+.prato .preco {
+    color: #d4af37;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.prato p {
+    color: #ccc;
+}
+
+.prato a {
+    display: inline-block;
+    margin-top: 10px;
+    background: #d4af37;
+    color: #000;
+    padding: 8px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* ASIDE */
+aside {
+    flex: 1;
+    min-width: 280px;
+    color: #fff;
+}
+
+aside h3 {
+    font-size: 1.2em;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    color: #d4af37;
+}
+
+aside iframe {
+    width: 100%;
+    height: 200px;
+    border: none;
+    border-radius: 10px;
+}
+
+aside form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+aside label {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #fff;
+}
+
+aside input,
+aside select,
+aside button {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background: #222;
+    color: #eee;
+}
+
+aside input:focus,
+aside select:focus {
+    outline: 2px solid #d4af37;
+}
+
+aside button {
+    background: #d4af37;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    color: #000;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #000;
+    color: #fff;
+    margin-top: 40px;
+}
+
+footer a {
+    color: #fff;
+}
+
+/* RESPONSIVO */
+@media (max-width: 900px) {
+    #pratos {
+        flex-direction: column;
+    }
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .navbar .btn {
+        margin-top: 10px;
+    }
+
+    .destaque {
+        padding: 20px;
+    }
+
+    .textos-destaque h2 {
+        font-size: 2em;
+    }
+}
