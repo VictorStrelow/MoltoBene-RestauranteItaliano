@@ -5,13 +5,63 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="shortcut icon" href="../logo.ico" type="image/x-icon" />
-    <title>Molto Bene - Restaurante Italiano</title>
-    <link rel="stylesheet" href="../Pag. Inicial/style.css" />
-
+    <title>Molto Bene | Contato</title>
+    <link rel="stylesheet" href="contato.css" />
 </head>
 
 <body>
-    
+    <header>
+        <div class="logo">
+            <a href="../Pag. Inicial/index.html">
+                <img src="../Imagens/logo.jpg" alt="Logo do Restaurante" />
+            </a>
+        </div>
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li><a href="../Pag. Inicial/index.html">Home</a></li>
+                    <li><a href="../Pags Extra/cardapio.html">Cardápio</a></li>
+                    <li><a href="../Pags Extra/sobre.html">Sobre</a></li>
+                    <li><a href="../Pags Extra/contato.html">Contato</a></li>
+                    <a class="btn" href="#formContato">Reservar Mesa</a>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="contato-intro" style="text-align:center; padding: 50px 20px; background: linear-gradient(to right, #28a745, #fff, #dc3545); color: #000;">
+            <h1>Fale Conosco</h1>
+            <p>Estamos prontos para ouvir você! Entre em contato para dúvidas, sugestões ou reservas.</p>
+        </section>
+
+        <section class="form-contato" style="max-width:600px; margin:40px auto; padding: 0 20px;">
+            <form id="formContato" action="#" method="POST">
+                <label for="nome">Nome</label><br />
+                <input type="text" id="nome" name="nome" required placeholder="Seu nome completo" /><br /><br />
+
+                <label for="email">E-mail</label><br />
+                <input type="email" id="email" name="email" required placeholder="seuemail@exemplo.com" /><br /><br />
+
+                <label for="mensagem">Mensagem</label><br />
+                <textarea id="mensagem" name="mensagem" rows="5" required placeholder="Escreva sua mensagem aqui..."></textarea><br /><br />
+
+                <button type="submit" style="background:#d4af37; color:#000; padding:10px 20px; border:none; border-radius:5px; font-weight:bold; cursor:pointer;">Enviar</button>
+            </form>
+        </section>
+
+        <section class="info-contato" style="max-width:600px; margin: 50px auto 80px; padding: 0 20px; color:#eee; text-align:center;">
+            <h2 style="color:#d4af37; margin-bottom:15px;">Informações de Contato</h2>
+            <p><strong>Endereço:</strong> Rua Itália, 1234, Centro, São Paulo, SP</p>
+            <p><strong>Telefone:</strong> (11) 98765-4321</p>
+            <p><strong>E-mail:</strong> contato@moltobene.com</p>
+        </section>
+    </main>
+
+    <footer style="text-align:center; padding: 25px; background:#000; color:#fff; border-top: 3px solid #d4af37;">
+        <p>&copy; 2025 Molto Bene - Restaurante Italiano | Contato: <a href="mailto:contato@moltobene.com">contato@moltobene.com</a> | <a href="tel:+5511987654321">(11) 98765-4321</a></p>
+        <p>Siga-nos: <a href="#" target="_blank">Facebook</a> | <a href="#" target="_blank">Instagram</a> | <a href="#" target="_blank">Twitter</a></p>
+    </footer>
 </body>
 
 </html>
