@@ -27,7 +27,6 @@ header {
 .logo img {
     height: 60px;
     border-radius: 10px;
-    box-shadow: 0 0 10px #d4af37;
 }
 
 .navbar nav ul {
@@ -44,8 +43,7 @@ header {
     transition: color 0.3s;
 }
 
-.navbar nav ul li a:hover,
-footer a:hover {
+.navbar nav ul li a:hover {
     color: #28a745;
 }
 
@@ -68,14 +66,16 @@ footer a:hover {
 
 /* INTRO */
 .contato-intro {
+    font-family: Dancing Script;
     text-align: center;
     padding: 50px 20px;
     background: linear-gradient(to right, #28a745, #fff, #dc3545);
     color: #000;
+    font-size: 1.3em;
 }
 
 .contato-intro h1 {
-    font-size: 2.5em;
+    font-size: 2.8em;
     margin-bottom: 10px;
 }
 
@@ -155,6 +155,16 @@ footer a:hover {
     margin: 10px 0;
 }
 
+.info-contato a {
+    color: #fff;
+    text-decoration: underline;
+    transition: color 0.3s;
+}
+
+.info-contato a:hover {
+    color: #28a745;
+}
+
 /* FOOTER */
 footer {
     text-align: center;
@@ -169,4 +179,8 @@ footer a {
     margin: 0 5px;
     text-decoration: underline;
     transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #28a745;
 }
