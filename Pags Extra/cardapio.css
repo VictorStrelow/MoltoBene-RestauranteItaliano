@@ -122,6 +122,10 @@ header {
     padding: 40px 5%;
 }
   
+a {
+    text-decoration: none;
+}
+
 .item {
     background: #1c1c1c;
     border-radius: 10px;
